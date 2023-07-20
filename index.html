@@ -32,35 +32,11 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-	<script type="application/ld+json">
-		{
-		  "@context": "https://schema.org",
-		  "@type": "Person",
-		  "name": "Nina Carducci",
-		  "description": "Photographe professionnelle à Bordeaux, saisissant des moments merveilleux d'une vie avec son regard, son approche et sa technique.",
-		  "image": "https://nina-carducci-photographe.netlify.app/assets/images/nina-lossy.webp",
-		  "sameAs": "https://www.instagram.com/ninacarducci.photo/?hl=fr"
-		}
-	</script>
-
-	<script type="application/ld+json">
-		{
-		  "@context": "https://schema.org",
-		  "@type": "CreativeWork",
-		  "name": "Galerie de photos de Nina Carducci",
-		  "description": "Découvrez la galerie de photos de Nina Carducci, photographe professionnelle à Bordeaux, comprenant des images de concerts, d'entreprises, de mariages et de portraits.",
-		  "image": [
-			"https://nina-carducci-photographe.netlify.app/assets/images/desktop/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp",
-			"https://nina-carducci-photographe.netlify.app/assets/images/desktop/slider/nicholas-green-nPz8akkUmDI-unsplash.webp",
-			"https://nina-carducci-photographe.netlify.app/assets/images/desktop/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
-		  ]
-		}
-		</script>
 </head>
 
 <body>
 	<header class="top-header">
-		<h3 class="name">Nina Carducci</h3>
+		<h1 itemprop="name" class="name">Nina Carducci</h1>
 		<nav class="nav">   
 			<ul>
 				<li><a href="#about">À propos</a></li>
@@ -71,7 +47,7 @@
 			</ul>
 		</nav>
 	</header>
-	<main>
+	<main itemprop="mainContentOfPage">
 		<div id="header">
 			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-indicators">
@@ -80,21 +56,23 @@
 					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
 				</div>
 				<div class="carousel-inner">
-					<div class="carousel-item active">
+					<div class="carousel-item active" itemscope itemtype="https://schema.org/ImageObject">
 						<picture>
 							<source media="(min-width: 1200px)" srcset="./assets/images/desktop/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100">
 							<source media="(min-width: 800px)" srcset="./assets/images/tablette/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100">
 							<source media="(min-width: 300px)" srcset="./assets/images/mobile/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100">
 							<img src="./assets/images/desktop/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100" alt="Homme d'affaire sur un passage piéton">
 						</picture>
+						<meta itemprop="name" content="Homme d'affaire sur un passage piéton">
 					</div>
-					<div class="carousel-item">
+					<div class="carousel-item" itemscope itemtype="https://schema.org/ImageObject">
 						<picture>
 							<source media="(min-width: 1200px)" srcset="./assets/images/desktop/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100">
 							<source media="(min-width: 800px)" srcset="./assets/images/tablette/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100">
 							<source media="(min-width: 300px)" srcset="./assets/images/mobile/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100">
 							<img src="./assets/images/desktop/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100" alt="Foule dans un concert">
 						</picture>
+						<meta itemprop="name" content="Foule dans un concert" itemscope itemtype="https://schema.org/ImageObject">
 					</div>
 					<div class="carousel-item">
 						<picture>
@@ -103,6 +81,7 @@
 							<source media="(min-width: 300px)" srcset="./assets/images/mobile/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" class="d-block w-100">
 							<img src="./assets/images/desktop/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" class="d-block w-100" alt="Couple de mariés qui dansent">
 						</picture>
+						<meta itemprop="name" content="Couple de mariés qui dansent">
 					</div>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -115,30 +94,30 @@
 				</button>
 			</div>
 		</section>
-		<section id="about">
+		<section id="about" itemscope itemtype="https://schema.org/Person">
 			<div class="picture left">
-				<img src="./assets/images/desktop/nina.webp" alt="Portrait de Nina">
+				<img src="./assets/images/desktop/nina.webp" alt="Portrait de Nina Carducci">
 			</div>
 			<div id="about-me">
 				<h3 class="about-me__title">A propos de moi</h3>
-				<h4 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h4>
+				<h4 class="about-me__introduction" itemprop="description">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h4>
 				<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 					C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
-				</div>
-			</section>
-			<div id="gallery">
+			</div>
+		</section>
+			<div id="gallery" itemscope itemtype="https://schema.org/ImageGallery">
 				<h3 class="title">Portfolio</h3>
 				<div class="container py-3">
 					<div class="gallery" style="display: none">
-						<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/desktop/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="Photo de mains en l'air lors d'un concert d'Aaron Paul"/>
-						<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/desktop/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="Portrait d'homme d'affaire"/>
-						<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/desktop/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" alt="Portrait de femmes autour d'un bureau"/>
-						<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/desktop/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" alt="Mains qui se touchent du bout des doigts"/>
-						<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/desktop/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="Portrait d'un homme fermant les yeux"/>
-						<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/desktop/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="Couple se tenant la main en tenues de mariage"/>
-						<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/desktop/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" alt="Portrait d'une femme passant la main dans ses cheveux"/>
-						<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/desktop/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" alt="Photo d'Austin Neill pendant un de ses concert"/>
-						<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/desktop/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="Portrait d'une femme souriante derrière un ordinateur"/>
+						<img itemprop="image" itemscope itemtype="https://schema.org/ImageObject" data-gallery-tag="Concert" class="gallery-item" src="./assets/images/desktop/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="Photo de mains en l'air lors d'un concert d'Aaron Paul"/>
+						<img itemprop="image" itemscope itemtype="https://schema.org/ImageObject" data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/desktop/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="Portrait d'homme d'affaire"/>
+						<img itemprop="image" itemscope itemtype="https://schema.org/ImageObject" data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/desktop/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" alt="Portrait de femmes autour d'un bureau"/>
+						<img itemprop="image" itemscope itemtype="https://schema.org/ImageObject" data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/desktop/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" alt="Mains qui se touchent du bout des doigts"/>
+						<img itemprop="image" itemscope itemtype="https://schema.org/ImageObject" data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/desktop/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="Portrait d'un homme fermant les yeux"/>
+						<img itemprop="image" itemscope itemtype="https://schema.org/ImageObject" data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/desktop/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="Couple se tenant la main en tenues de mariage"/>
+						<img itemprop="image" itemscope itemtype="https://schema.org/ImageObject" data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/desktop/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" alt="Portrait d'une femme passant la main dans ses cheveux"/>
+						<img itemprop="image" itemscope itemtype="https://schema.org/ImageObject" data-gallery-tag="Concert" class="gallery-item" src="./assets/images/desktop/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" alt="Photo d'Austin Neill pendant un de ses concert"/>
+						<img itemprop="image" itemscope itemtype="https://schema.org/ImageObject" data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/desktop/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="Portrait d'une femme souriante derrière un ordinateur"/>
 					</div>
 				</div>
 				<div class="quote">
@@ -150,41 +129,41 @@
 					</figure>
 				</div>
 			</div>
-			<div id="services">
+			<div id="services" itemscope itemtype="https://schema.org/Service">
 				<h2 class="title">Mes services</h2>
 				<div class="container">
-					<div class="service">
+					<div class="service" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
 						<div class="service__description">
-							<h3>Shooting photo</h3>
-							<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
+							<h3 itemprop="category">Shooting photo</h3>
+							<p itemprop="description">Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
 						</div>
-						<div class="service__price">
-						<h4>350€/demi journée</h4>
-						<span>Matériel, déplacement inclus</span>
+						<div class="service__price" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+						<h4 itemprop="price">350€/demi journée</h4>
+						<span itemprop="description">Matériel, déplacement inclus</span>
 					</div>
-				</div>
-				<div class="service">
-					<div class="service__description">
-						<h3>Retouches</h3>
-						<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
 					</div>
-					<div class="service__price">
-						<h4>50€/photo</h4>
-						<span>2 AR par photo</span>
+					<div class="service" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+						<div class="service__description">
+							<h3 itemprop="category">Retouches</h3>
+							<p itemprop="description">Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
+						</div>
+						<div class="service__price" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+							<h4 itemprop="price">50€/photo</h4>
+							<span itemprop="description">2 AR par photo</span>
+						</div>
 					</div>
-				</div>
-				<div class="service">
-					<div class="service__description">
-						<h3>Album photos</h3>
-						<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
-					</div>
-					<div class="service__price">
-						<h4>400€ album A4</h4>
-						<span>30 pages recto/verso</span>
+					<div class="service" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+						<div class="service__description">
+							<h3 itemprop="category">Album photos</h3>
+							<p itemprop="description">Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
+						</div>
+						<div class="service__price" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+							<h4 itemprop="price">400€ album A4</h4>
+							<span itemprop="description">30 pages recto/verso</span>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 		<div class="quote">
 			<figure>
 				<blockquote>
@@ -194,12 +173,12 @@
 			</figure>
 		</div>
 	</main>
-	<footer id="contact">
+	<footer id="contact" itemscope itemtype="https://schema.org/ContactPage">
 		<div class="container">
 			<div class="form-container">
 				<h2 class="une-question">Une question ? Une demande de devis ?</h2>
 				<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
-				<form action="" method="post">
+				<form action="" method="post" itemprop="potentialAction" itemscope itemtype="https://schema.org/CommunicateAction">
 					<label for="nom">Nom</label>
 					<input type="text" name="nom" id="nom">
 					<label for="email">Email</label>
@@ -213,7 +192,7 @@
 			<picture>
 				<source media="(min-width: 1200px)" srcset="./assets/images/desktop/camera.webp">
 				<source media="(min-width: 800px)" srcset="./assets/images/tablette/camera.webp">
-				<img src="./assets/images/desktop/camera.webp" alt="Appareil photo avec un filtre rougeoyant">
+				<img itemprop="image" itemscope itemtype="https://schema.org/ImageObject" src="./assets/images/desktop/camera.webp" alt="Appareil photo avec un filtre rougeoyant">
 			</picture>
 		</div>
 	</div>
