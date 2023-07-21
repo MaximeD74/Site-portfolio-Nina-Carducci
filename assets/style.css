@@ -231,6 +231,7 @@ h1, h2, h3, h4 {
 
 #contact .container {
 	display: flex;
+	gap: 50px;
 }
 .picture.right::before {
 	content: ' ';
@@ -243,14 +244,18 @@ h1, h2, h3, h4 {
 	z-index: -1;
 }
 .form-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	flex : 2;
 
 }
 form {
 	display: flex;
 	flex-direction: column;
-	width: 70%;
+	width: 100%;
 	align-items: flex-start;
+	margin-bottom: 50px;
 }
 
 form input {
@@ -385,3 +390,26 @@ input[type="submit"] {
 	}
 }
 
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	
+}
+
+.adress {
+	display: inline-block;
+	text-align: center;
+	flex-direction: row;
+}
+
+.adress p {
+	margin-bottom: 2px;
+}
+.contact-info-section a {
+	font-size: 16px;
+}
+.contact-info-section {
+	display: inline-block;
+	text-align: center;
+}
