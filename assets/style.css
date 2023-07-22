@@ -392,12 +392,12 @@ input[type="submit"] {
 
 .contact-info {
 	display: flex;
+    width: 100%;
 	gap: 20px;
     background-color: black;
     color: #FFF;
-    padding: 20px;
     font-size: 12px;
-    width: 100%;
+    padding: 20px;
 }
 
 .adress {
